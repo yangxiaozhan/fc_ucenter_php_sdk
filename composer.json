@@ -1,0 +1,28 @@
+{
+    "name": "yangxiaozhan/fc-ucenter-sdk",
+    "description": "UCenter 统一用户中心 PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["ucenter", "sms", "oauth", "login", "php-sdk"],
+    "homepage": "https://github.com/yangxiaozhan/fc_ucenter_php_sdk",
+    "authors": [
+        {
+            "name": "YangXiaoZhan",
+            "homepage": "https://github.com/yangxiaozhan"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/yangxiaozhan/fc_ucenter_php_sdk/issues",
+        "source": "https://github.com/yangxiaozhan/fc_ucenter_php_sdk"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "FC\\UCenter\\": "src/"
+        }
+    }
+}
