@@ -54,6 +54,7 @@ $oauth = $ucenter->getOAuthUrl('wechat', 'https://your-app.com/oauth/callback', 
 | 方法 | 说明 |
 |------|------|
 | `sendSms($phone, $scene = 'login')` | 发码，`scene`: login / bind / merge / cancel |
+| `sendNotifySms($phone, $templateId, $params = [])` | 业务模板短信，`template_id` 须在应用白名单内 |
 | `login($method, $params)` | 统一登录 |
 | `loginWithPhoneSms` / `loginWithWechat` / `loginWithWechatPhone` | 便捷登录 |
 | `loginWithAlipay` / `loginWithAlipayPhone` / `loginWithWeibo` / `loginWithQq` | 便捷登录 |

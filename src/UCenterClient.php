@@ -67,6 +67,21 @@ class UCenterClient
     }
 
     /**
+     * 发送业务模板短信（须在应用白名单内）
+     *
+     * @param list<string>|array<string, scalar> $params
+     * @return array{message_id?: string, template_id?: string}
+     */
+    public function sendNotifySms(string $phone, string $templateId, array $params = []): array
+    {
+        return $this->request('POST', '/api/v1/sms/notify', [
+            'phone' => $phone,
+            'template_id' => $templateId,
+            'params' => $params,
+        ]);
+    }
+
+    /**
      * @param array<string, mixed> $params
      * @return array<string, mixed>
      */
