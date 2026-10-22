@@ -8,7 +8,7 @@ UCenter 统一用户中心官方 PHP 客户端。
 ## 安装
 
 ```bash
-composer require yangxiaozhan/fc-ucenter-sdk
+composer require yangxiaozhan/fc-ucenter-sdk:^1.1
 ```
 
 PHP >= 8.1，依赖 `guzzlehttp/guzzle`。
